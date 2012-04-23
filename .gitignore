@@ -1,0 +1,4 @@
+bem-bl
+bootstrap-bl
+pages/*/*.*
+!pages/*/*.bemjson.js
