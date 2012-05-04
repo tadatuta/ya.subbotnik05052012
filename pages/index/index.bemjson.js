@@ -1,6 +1,6 @@
 ({
     block: 'b-page',
-    title: 'Btn',
+    title: 'Carousel',
     head: [
         { elem: 'css', url: 'index.css'},
         { elem: 'css', url: 'index.ie.css', ie: 'lt IE 8' },
@@ -13,11 +13,21 @@
             content : [
                 {
                     elem: 'item',
-                    content: 'bla1'
+                    content: {
+                        tag: 'div',
+                        attrs: {
+                            style: 'width: 300px; height: 300px; background: #ccc'
+                        }
+                    }
                 },
                 {
                     elem: 'item',
-                    content: 'bla2'    
+                    content: {
+                        tag: 'div',
+                        attrs: {
+                            style: 'width: 300px; height: 300px; background: #333'
+                        }
+                    }
                 }
             ]
         },

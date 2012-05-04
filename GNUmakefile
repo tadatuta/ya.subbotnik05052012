@@ -14,17 +14,6 @@ BEM_BUILD=$(BEM) build \
 	-o $(@D) \
 	-n $(*F)
 
-LESS_BUILD=$(BEM) build \
-    -l bem-bl/blocks-common/ \
-    -l bem-bl/blocks-desktop/ \
-    -l bootstrap-bl/blocks/ \
-    -l blocks/ \
-    -l $(@D)/blocks/ \
-    -d $< \
-    -t bootstrap-bl/blocks/.bem/techs/less.js \
-    -o $(@D) \
-    -n $(*F)
-
 BEM_CREATE=$(BEM) create block \
 		-l pages \
 		-T $1 \
@@ -60,7 +49,7 @@ LESS=lessc $(@D)/$(*F).less $(@D)/$(*F).$1
 
 .PRECIOUS: %.less
 %.less: %.deps.js
-	$(call LESS_BUILD,less)
+	$(call BEM_BUILD,less)
 
 .PRECIOUS: %.js
 %.js: %.deps.js

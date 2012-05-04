@@ -1,3 +1,4 @@
+/*
 BEM.DOM.decl('carousel',
 {
     onSetMod: {
@@ -25,3 +26,4 @@ BEM.DOM.decl('carousel',
     }
 }
 );
+*/
