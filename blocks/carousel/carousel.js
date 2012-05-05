@@ -1,10 +1,10 @@
-/*
 BEM.DOM.decl('carousel',
 {
     onSetMod: {
         'js': function() {
             this.__base();
-            this._getImages(this.cycle);
+
+            this._getImages(this.cycle);            
         },
     },
     _getImages: function(callback) {
@@ -20,10 +20,10 @@ BEM.DOM.decl('carousel',
                                 '</div>';
                     })).join('')
                 );
+                _this.update();
                 callback(_this);
             }
         });   
     }
 }
 );
-*/

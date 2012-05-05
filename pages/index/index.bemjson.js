@@ -9,25 +9,30 @@
     ],
     content: [
         {
-            block: 'carousel',
-            content : [
+            block: 'container',
+            content: [
                 {
-                    elem: 'item',
-                    content: {
-                        tag: 'div',
-                        attrs: {
-                            style: 'width: 300px; height: 300px; background: #ccc'
+                    block: 'carousel',
+                    content: [
+                        {
+                            elem: 'item',
+                            content: {
+                                tag: 'div',
+                                attrs: {
+                                    style: 'width: 300px; height: 300px; background: #ccc'
+                                }
+                            }
+                        },
+                        {
+                            elem: 'item',
+                            content: {
+                                tag: 'div',
+                                attrs: {
+                                    style: 'width: 300px; height: 300px; background: #333'
+                                }
+                            }
                         }
-                    }
-                },
-                {
-                    elem: 'item',
-                    content: {
-                        tag: 'div',
-                        attrs: {
-                            style: 'width: 300px; height: 300px; background: #333'
-                        }
-                    }
+                    ]
                 }
             ]
         }

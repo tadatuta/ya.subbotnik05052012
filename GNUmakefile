@@ -40,7 +40,7 @@ LESS=lessc $(@D)/$(*F).less $(@D)/$(*F).$1
 	$(call BEM_BUILD,ie.css)
 
 .PRECIOUS: %.css
-%.css: %.deps.js
+%.css: %.less
 	$(call LESS,css)
 
 .PRECIOUS: %.ie.css
